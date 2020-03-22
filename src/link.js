@@ -2,6 +2,7 @@ import Node from "./node";
 
 function link(elements) {
   const buildChildren = (parent, children) => {
+    //TODO firstChild needs to be in the loop to check for children
     const firstChild = new Node(children[0]);
     if (children.length <= 1) return firstChild;
 
